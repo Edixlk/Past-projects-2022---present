@@ -1,0 +1,246 @@
+/* made by edixlk on 24/11/2022 @12:53pm Do not copy */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+
+body {
+    background: rgb(34, 34, 34);
+    color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* navbar */
+
+.logo {
+    position: absolute;
+    font-size: 27px;
+}
+
+/* this is for the mobile navbar */
+
+#menu {
+   display: none;
+}
+
+body {
+    height: 200vh;
+}
+
+/* navbar */
+
+nav {
+    top: 0;
+    background: black;
+    height: 90px;
+    line-height: 90px;
+    width: 100%;
+    position: fixed;
+    padding: 0 100px;
+}
+
+
+nav {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322);
+}
+
+nav li {
+    list-style: none;
+}
+
+nav ul {
+    float: right;
+    display: flex;
+}
+
+
+nav a {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin: 0 1em;
+}
+
+nav a:hover {
+    color: lightgreen;
+}
+
+nav .active {
+    color: lightgreen;
+}
+
+/* button */
+
+#signin {
+    height: 40px;
+    width: 100px;
+    margin: 2em ;
+}
+
+#signin {
+    outline: none;
+    color: black;
+    border: none;
+    background: lightgreen;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+#signin:hover {
+    box-shadow: 0px 0px 20px rgba(144, 238, 144, 0.468);
+}
+
+
+/* content */
+
+.content {
+    margin-top: 16px;
+    padding: 5em;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-bottom: 0.5em;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+
+/* for laptops or some other medium or large device*/
+
+
+@media only screen and (max-width:1024px) and (min-width:900px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .content {
+        padding: 3em;
+    }
+}
+
+/* for bigger phones and tablet */
+
+@media only screen and (max-width:900px) and (min-width:10px) {
+
+    /* navigation bar */
+.logo {
+ display: none;
+}
+
+
+nav {
+    padding: 0;
+    height: 450px;
+    margin-top: -400px;
+    background: rgb(0, 0, 0);
+    transition: 0.6s ease-in-out;
+    }
+
+
+nav:hover {
+    margin-top: 0px;
+}
+    
+nav ul {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+    
+nav a {
+    font-weight: 400;
+    text-align: center;
+    padding: 4px;
+    display: block;
+    margin-bottom: 12px;
+    }
+    
+nav a:hover {
+    background-color: rgba(30, 30, 30, 0.414);
+    }
+    
+nav .active {
+    color: lightgreen;
+    background-color: rgba(39, 39, 39, 0.414);
+}
+
+#menu {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    margin: 1em;
+    float: right;
+}
+
+#signin {
+    display: none;
+    background: none;
+    color: lightgreen;
+    border: 2px solid lightgreen;
+}
+
+#signin:hover {
+    box-shadow: none;
+    background: lightgreen;
+    color: black;
+}
+
+#menu:hover {
+    color: lightgreen;
+}
+
+/* content layout */
+
+
+.content {
+    padding: 2em;
+}
+
+.content{
+  margin-top: 70px;
+  font-size: 10px;
+}
+
+.content h1 {
+    font-size: 30px;
+}
+
+.content img {
+    width: 400px;
+}
+
+}
+
+
+/* smaller devices (phone or tablet) */
+
+
+@media only screen and (max-width: 420px) and (min-width:100px) {
+
+    .content img {
+        width: 200px;
+    }
+
+    .content h1 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 8px;
+    }
+}
