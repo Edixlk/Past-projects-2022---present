@@ -1,0 +1,14 @@
+ --card-bg: rgb(36, 0, 64);
+   --text-color: white;
+   --card-text-color:rgb(217, 211, 255);
+   --a-hover-color: rgb(111, 78, 255);
+   --background: rgb(28, 24, 34);
+   --nav-bg: rgb(9, 3, 19);
+   --btn-color: rgb(76, 54, 189);
+   --btn-hover-color: rgb(43, 30, 104);
+   --btn-hover-color: rgb(69,69,255);
+   --primary-drop-shadow: 0px 0px 20px rgba(7, 0, 15, 0.501);
+   --secondary-drop-shadow: 0px 0px 20px rgba(7, 0, 15, 0.27);
+   --mobile-nav-color: rgb(28, 24, 34);
+   --mobile-nav-hover-1:rgb(111, 78, 255);
+   --mobile-nav-hover-2: rgba(11, 3, 23, 0.388);

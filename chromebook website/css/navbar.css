@@ -1,0 +1,42 @@
+
+#logo {
+    position: absolute;
+    font-size: 2em;
+}
+
+#logo:hover {
+    color: rgb(4, 95, 192);
+}
+
+nav {
+    height: 120px;
+    line-height: 100px;
+    width: 100;
+    padding: 0 10em;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 0 1em;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+nav .active {
+    color: rgb(0, 82, 170);
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: rgb(0, 82, 170);
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*  {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* content */
+
+.content {
+    z-index: 1;
+    margin-top: 63px;
+    padding: 5em;
+}
+
+.intro {
+    height: 70vh;
+    max-width: 600px;
+}
+
+.intro h1 {
+    font-size: 60px;
+    margin-bottom: 14px;
+}
+
+.intro p {
+    line-height: 1.2em;
+    font-size: 16px;
+}
+
+.intro button{
+    width: 150px;
+    height: 50px;
+    margin-top: 17px;
+    font-size: 1.2em;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 26px;
+    background: none;
+    font-weight: 600; 
+}
+
+.intro button:hover {
+    background: black;
+    color: white;
+}
+
+.product-image {
+    position: absolute;
+    right: 12%;
+    top: 129px;
+}
+
+/* next section for specs */
+
+.features {
+    padding: 6em;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.features h1 {
+    font-size: 50px;
+}
+
+.features section {
+    border-top: 1px solid black;
+    margin-top: 5em;
+    display: flex;
+}
+
+.features .card {
+    width: 300px;
+    height: 300px;
+    padding: 1.3em;
+}
+
+.card {
+    font-size: 2em;
+}
+
+.card i {
+    margin: 0.8em;
+    font-size: 2em;
+}
+
+#vary {
+    padding-top: 34px;
+    float: right;
+    font-size: 20px;
+    color: rgb(193, 193, 193);
+    font-weight: 300;
+}

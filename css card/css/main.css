@@ -1,0 +1,238 @@
+/* made by edixlk on 11/27/2022. do not copy. */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    transition: 0.2s;
+}
+
+body {
+    background: var(--background);
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+/* root colors */
+
+:root {
+   --card-bg: rgb(36, 0, 64);
+   --text-color: white;
+   --card-text-color:rgb(217, 211, 255);
+   --a-hover-color: rgb(111, 78, 255);
+   --background: rgb(28, 24, 34);
+   --nav-bg: rgb(9, 3, 19);
+   --btn-color: rgb(76, 54, 189);
+   --btn-hover-color: rgb(43, 30, 104);
+   --btn-hover-color: rgb(69,69,255);
+   --primary-drop-shadow: 0px 0px 20px rgba(7, 0, 15, 0.501);
+   --secondary-drop-shadow: 0px 0px 20px rgba(7, 0, 15, 0.27);
+   --mobile-nav-color: rgba(21, 8, 37, 0.771);
+   --nav-border-px: 1px solid rgba(56, 13, 125, 0.348);
+   --mobile-nav-hover-1:rgb(111, 78, 255);
+   --mobile-nav-hover-2: rgba(11, 3, 23, 0.388);
+}
+
+/* navbar */
+
+/*logo */
+
+.logo a {
+    display: block;
+    position: absolute;
+    font-size: 1.7em;
+}
+
+#menu-btn {
+    display: none;
+}
+
+nav {
+    z-index: 11;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 0 10em;
+    height: 80px;
+    line-height: 80px;
+    background: var(--nav-bg) ;
+    box-shadow: var(--primary-drop-shadow);
+}
+
+nav ul {
+    text-transform: uppercase;
+    display: flex;
+    float: right;
+}
+
+nav a {
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0 1em;
+}
+
+nav a:hover {
+    color: var(--a-hover-color);
+}
+
+nav  .active {
+    color: var(--a-hover-color) ;
+}
+
+/* end of navbar */
+
+/*content */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+/*card layout*/
+
+.card {
+    cursor: pointer;
+    width: 400px;
+    height: 500px;
+    background: var(--card-bg);
+    margin: 1.5em;
+    color: var(--card-text-color);
+    box-shadow: var(--secondary-drop-shadow) ;
+}
+
+
+/* hover increases size of card when clicked*/
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.details {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 1em;
+}
+
+.details h1 {
+    font-size: 2em;
+    margin-bottom: 12px;
+}
+
+/* images for cards */
+
+.card-image {
+    height: 250px;
+    display: block;
+}
+
+.card-image {
+    background-size: cover;
+    background-position: center;
+}
+
+/* directory of images */
+
+.vessel-image {
+    background-image: url(../images/TAL-norwegian-cruise-prima-ship-exterior-lead-PRIMASAILS0822-074577d71aba4ac39347112409e4fd6c.jpg);
+  
+}
+
+.car-image {
+    background-image: url(../images/0x0.jpg);
+}
+
+.plane-image {
+    background-image: url(../images/Q62V4IEQWEXDYBEWKC7LEB3KQU.webp);
+}
+
+/* button links to somewhere when clicked on one of the cards */
+
+.details button{
+    float: right;
+    height: 50px;
+    width: 100%;
+    margin-top: 1.2em;
+    color: var(--text-color);
+    font-size: 1.2em;
+    font-weight: 400;
+    background: var(--btn-color);
+}
+
+.details button:hover {
+    background: var(--btn-hover-color);
+}
+
+/* end of card */
+
+
+/* footer */ 
+
+footer {
+    margin-top: 4em;
+    bottom: 0;
+}
+
+footer .content {
+    height: 200px;
+    padding: 3em;
+    text-align: center;
+    background: var(--nav-bg);
+    bottom: 0;
+}
+
+footer .content a {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+footer .content a:hover {
+    color: var(--a-hover-color);
+}
+
+
+@media only screen and (max-width:1024px) {
+    nav {
+        padding:0 4em ;
+    }
+}
+
+@media only screen and (min-width:700px) and (min-width:600px) {
+    nav {
+        padding:0 0.7em ;
+    }
+}
+
+@media only screen and (max-width:600px) and (min-width:320px) {
+    nav {
+        display: none;
+    }
+    
+    .card {
+        margin: 1em;
+    }
+    
+}
+
+@media  only screen and (max-width: 600px) and (min-width:320px){
+
+    .card {
+        width: 100%;
+    }
+}
+
+
+
+
