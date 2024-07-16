@@ -14,13 +14,14 @@
 }
 
 body {
+    animation: fade 5s 1;
     background-color: rgb(37, 37, 37);
     color: rgb(228, 228, 228);
 }
 
 .container {
     height: 100vh;
-    padding: 1em 5em;
+    padding: 2em 5em;
     justify-content: center;
 }
 
@@ -40,6 +41,11 @@ hr {
 }
 
 
+ul {
+    padding-bottom: 3em;
+}
+
+
 a {
     color: rgb(255, 255, 255);
     display: block;
@@ -52,9 +58,80 @@ a {
 a {
     font-size: 1.3em;
     font-weight: 600;
+    padding: 2px 27px;
 }
 
 a:hover {
-    color: rgb(0, 183, 255);
-   
+   background-color: rgba(0, 0, 0, 0.26);
+   border-left: 3px solid  rgb(0, 183, 255);
 }
+
+
+@keyframes fade {
+
+    to {
+        opacity: 100%;
+    }
+
+    from {
+        opacity: 0%}
+
+    }
+
+
+
+    .btn-wrapper {
+        width: 100%;
+    }
+
+
+    button {
+        margin: 0 10px;
+        font-weight: 500;
+    }
+
+
+    .github-btn-link {
+        height: 50px;
+        width: 150px;
+        font-size: 1.2em;
+        background-color: purple;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        bottom: 0;
+    }
+
+    span {
+        margin-right: 5px;
+    }
+
+
+
+
+    .yt-btn {
+        height: 50px;
+        width: 150px;
+        font-size: 1.2em;
+        background-color: rgb(199, 8, 8);
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        bottom: 0;
+    }
+
+    span {
+        margin-right: 5px;
+    }
+
+    .github-btn-link:hover {
+        background-color:  rgb(110, 2, 110);
+    }
+
+    .yt-btn:hover {
+        background-color: rgb(155, 2, 2);
+    }
