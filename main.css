@@ -12,12 +12,14 @@
     color: rgb(244, 252, 255);
     background-color: rgb(0, 183, 255);
 }
-
+/* REGULAR STYLING FOR THE PAGE */
 body {
     animation: fade 5s 1;
     background-color: rgb(37, 37, 37);
     color: rgb(228, 228, 228);
 }
+
+/* ============ FOR HEADER ================ */
 
 .container {
     height: 100vh;
@@ -45,7 +47,7 @@ ul {
     padding-bottom: 3em;
 }
 
-
+/* ============== STYLING THE ANCHOR TAG ========== */
 a {
     color: rgb(255, 255, 255);
     display: block;
@@ -61,11 +63,14 @@ a {
     padding: 2px 27px;
 }
 
+/* ===== THIS WOULD ADD A BLUE BORDER TO THE LEFT AND DARKEN A BACKGROUND COLOR WHEN THE MOUSE IS HOVERED OVER IT */
+
 a:hover {
    background-color: rgba(0, 0, 0, 0.26);
    border-left: 3px solid  rgb(0, 183, 255);
 }
 
+/* == FOR FADE IN ANIMATION, NOTHING FNACY. == */
 
 @keyframes fade {
 
@@ -78,12 +83,14 @@ a:hover {
 
     }
 
-
+/* ========== BUTTON WRAPPER FOR ============= */
 
     .btn-wrapper {
         width: 100%;
     }
 
+
+    /* STYLING FOR BOTH GIT AND YOUTUBE BUTTONS */
 
     button {
         margin: 0 10px;
@@ -104,11 +111,11 @@ a:hover {
         bottom: 0;
     }
 
+    /* THIS CREATES SPACE FOR THE LOGO NEXT TO THE TEXT IN THE BUTTON */
+
     span {
         margin-right: 5px;
     }
-
-
 
 
     .yt-btn {
@@ -123,10 +130,8 @@ a:hover {
         cursor: pointer;
         bottom: 0;
     }
-
-    span {
-        margin-right: 5px;
-    }
+ 
+    /* ====== THIS IS TO DARKEN THE BUTTON WHEN THE MOUSE IS OVER IT =====*/
 
     .github-btn-link:hover {
         background-color:  rgb(110, 2, 110);
@@ -135,3 +140,6 @@ a:hover {
     .yt-btn:hover {
         background-color: rgb(155, 2, 2);
     }
+
+
+    /* =================== END OF HEADER ================*/
