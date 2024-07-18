@@ -143,3 +143,38 @@ a:hover {
 
 
     /* =================== END OF HEADER ================*/
+
+
+    @media only screen and (max-width:768px) {
+        .container {
+           text-align: center;
+           padding: 3em;
+        }
+
+     a {
+        text-align: left;
+        margin: 20px 0;
+       
+     }
+
+     a, h1, p {
+        text-align: left;
+     }
+
+     a:hover {
+         border-left: none;
+         background: none;
+         color: rgb(0, 183, 255);
+     }
+
+     p {
+        line-height: 1.4em;
+        font-size: 12px;
+        font-weight: 500;
+     }
+
+     button {
+        margin: 12px 5px;
+     }
+
+    }
