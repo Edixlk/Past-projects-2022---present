@@ -63,6 +63,10 @@ a {
     padding: 2px 27px;
 }
 
+
+br {
+    display: none;
+}
 /* ===== THIS WOULD ADD A BLUE BORDER TO THE LEFT AND DARKEN A BACKGROUND COLOR WHEN THE MOUSE IS HOVERED OVER IT */
 
 a:hover {
@@ -70,6 +74,9 @@ a:hover {
    border-left: 3px solid  rgb(0, 183, 255);
 }
 
+p {
+    font-weight: 500;
+}
 /* == FOR FADE IN ANIMATION, NOTHING FNACY. == */
 
 @keyframes fade {
@@ -146,9 +153,10 @@ a:hover {
 
 
     @media only screen and (max-width:768px) {
+
         .container {
            text-align: center;
-           padding: 3em;
+           padding: 2em;
         }
 
      a {
@@ -169,12 +177,23 @@ a:hover {
 
      p {
         line-height: 1.4em;
-        font-size: 12px;
-        font-weight: 500;
+        font-size:  0.7em
      }
 
      button {
-        margin: 12px 5px;
+        margin: 5px 5px;
      }
+
+     hr {
+        margin: 12px 0;
+    }
+
+    ul {
+        padding-bottom: 1em ;
+    }
+
+    br {
+        display: block;
+    }
 
     }
