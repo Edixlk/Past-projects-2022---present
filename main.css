@@ -208,4 +208,9 @@ p {
         .container h1 {
             line-height: 1.3em;
         }
+
+        .container p {
+            font-size: 1.1em;
+            font-weight: 200;
+        }
     }
