@@ -197,3 +197,15 @@ p {
     }
 
     }
+
+
+    @media only screen and (max-width:400px) {
+
+        .container {
+            padding: 3.4em 2em;
+        }
+
+        .container h1 {
+            line-height: 1.3em;
+        }
+    }
