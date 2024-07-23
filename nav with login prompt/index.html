@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--- FONTAWSOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" id="n-logo" onclick="Home()">Nav</div>
+
+            <!--- links -->
+
+            <ul class="links" id="nav-links">
+                <li><a href="">HOME</a></li>
+                <li><a href="">NEWS</a></li>
+                <li><a href="">IMAGES</a></li>
+                <li><a href="">ABOUT</a></li>
+                <button id="sign-btn" onclick="Login()">Sign In</button>
+            </ul>
+
+            <!-- Hamburger menu -->
+
+
+
+        
+        <ul class="mobilen-links" id="mnav-links">
+            <li><a href="">HOME</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">IMAGES</a></li>
+            <li><a href="">ABOUT</a></li>
+        </ul>
+
+    <div class="sign-in-dialog" id="mobile-sign-in-dia">
+        <h4>Do you want to sign in?</h4> 
+        <button id="sign-btn-mobile" class="mbutton sign-in-btn" onclick="MobLogin()">yes</button> 
+        <button id="mob-close-btn" onclick="CloseBtn()" class="mbutton close-btn">Later</button>
+    </div>
+
+        <!-- Hamburger menu -->
+
+        <div class="ham-btn" id="hamburger-btn" onclick="ToggleNav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    </nav>
+
+     <section class="wrapper">
+        <h1>This is some text</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, est.</p>
+        <button class="btn one">Click me </button>
+  
+    <!-- javascript -->
+   <script src="./main.js"></script>
+</body>
+</html>

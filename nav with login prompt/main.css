@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: rgb(243, 242, 242);
+}
+
+nav {
+  width: 100%;
+  line-height: 80px;
+  height: 80px;
+  background-color: rgb(36, 35, 35);
+}
+
+.links,
+nav {
+  z-index: 1;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ham-btn {
+  display: none;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 2.2em;
+  color: white;
+  font-weight: 600;
+}
+
+.mobilen-links {
+  display: none;
+}
+
+.links {
+  display: flex;
+  gap: 2em;
+}
+
+.links a {
+  display: block;
+  color: white;
+  font-size: 1.2em;
+}
+
+.links a:hover {
+  color: rgb(0, 136, 255);
+}
+
+#sign-btn {
+  cursor: pointer;
+  height: 45px;
+  margin: auto;
+  padding: 5px 12px;
+  width: 100px;
+  position: relative;
+  left: 2em;
+  color: white;
+  background-color: rgb(0, 136, 255);
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#sign-btn:hover {
+  background-color: rgb(4, 110, 203);
+}
+
+.wrapper {
+  position: relative;
+  top: 7em;
+  padding: 3em 4em;
+  height: 80vh;
+}
+
+.wrapper h1 {
+  font-size: 55px;
+}
+
+.wrapper p {
+  font-size: 20px;
+}
+
+.wrapper .one {
+  width: 150px;
+  height: 50px;
+  font-size: 1.2em;
+  background-color: rgb(0, 136, 255);
+  color: white;
+  margin: 1em 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sign-in-dialog {
+  display: none;
+}
+
+/* for smaller screens */
+
+@media only screen and (max-width: 900px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+    border-bottom: 2px solid rgb(5, 95, 174);
+  }
+
+  .links {
+    display: none;
+  }
+
+  .mobilen-links {
+    z-index: 1;
+    display: block;
+    text-align: center;
+    width: 100%;
+    top: 81px;
+    position: absolute;
+    background-color: rgba(1, 1, 1, 0.845);
+    backdrop-filter: blur(12px);
+    left: 0;
+    padding-bottom: 1em;
+  }
+
+  .mobilen-links a {
+    margin: 12px 0;
+    color: white;
+    display: block;
+  }
+
+  .mobilen-links a:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.272);
+  }
+
+  .sign-in-dialog {
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(22, 22, 24, 0.696);
+    backdrop-filter: blur(13px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 2em;
+    gap: 12px;
+  }
+
+
+  .sign-in-dialog {
+    animation: popup;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+  }
+
+  .sign-in-dialog h4 {
+    color: white;
+  }
+
+  .mbutton {
+    margin: auto;
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    font-size: 1.2em;
+    background-color: rgb(0, 136, 255);
+    color: white;
+    border-radius: 5px;
+  }
+
+
+  .close-btn {
+    background-color: rgb(12, 78, 135);
+    color: rgba(255, 255, 255, 0.628);
+  }
+
+  /* ---- for popup delay ----- */
+
+  @keyframes popup {
+
+    0% {
+        bottom: -268px;
+    }
+    
+    100% {
+        bottom: 0px;
+    }
+  }
+  
+
+  @keyframes slidedown {
+    0% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: -268px;
+    }
+  }
+
+  .ham-btn {
+    cursor: pointer;
+    display: block;
+    font-size: 2em;
+    color: white;
+  }
+
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 4px;
+  }
+
+  .wrapper {
+    padding: 1em 2em;
+  }
+  .wrapper h1 {
+    line-height: 43px;
+    font-size: 2.5em;
+    margin-bottom: 12px;
+  }
+
+
+}
+
+
+/* FOR LOGIN PAGE */
+
+.sign-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   backdrop-filter: blur(5px);
+   background-color: rgba(0, 0, 0, 0.121);
+}
+
+.sign-wrapper {
+  animation: fade;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: backwards;
+}
+
+.form-wrapper {
+  padding: 0 1.4em;
+  color: white;
+  display: flex;
+  justify-content: center;
+   align-items: center;
+   gap: 12px;
+}
+
+.form-wrapper {
+  border-radius: 10px;
+  height: 350px;
+  width: 350px;
+  background-color: rgba(14, 12, 12, 0.626);
+  border: 1px rgba(255, 255, 255, 0.087) solid;
+  flex-direction: column;
+}
+
+.form-wrapper h1 {
+  width: 50%;
+  border-bottom: 1px solid  rgb(8, 127, 231);
+  text-align: center;
+  padding-bottom: 0.3em;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.form-wrapper a {
+  display: block;
+  color: white;
+  text-decoration: underline;
+  font-size: 13px;
+}
+
+.form-wrapper a:hover {
+  color: rgb(20, 165, 255);
+}
+
+.form-wrapper input {
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  padding: 7px 14px;
+  font-weight: 500;
+  font-size: 1em;
+  background-color:  rgb(233, 234, 235);
+}
+
+.form-wrapper #login-btn {
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+   background-color: rgb(0, 136, 255);
+   width: 100%;
+   text-align: center;
+   padding: 0.6em;
+   color: white;
+   height: 40px;
+   font-size: 1em;
+}
+
+#login-btn:hover {
+  background-color: rgb(8, 127, 231);
+}
+
+.note {
+  position: absolute;
+  bottom: 3em;
+  color: rgba(255, 255, 255, 0.811);
+  font-size: 13px;
+}
+
+.bg-img {
+  background-color: rgba(0, 0, 0, 0.493);
+  background-image: url(./login-bg-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-position: scroll;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+
+/* ANIMATION FOR LOGIN PAGE */
+@keyframes  fade {
+
+  0% {
+   opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }  
+}
+ @media only screen and (max-width: 400px) {
+
+  .sign-wrapper {
+     background-color: rgb(0, 0, 0);
+  }
+
+  .note {
+    bottom: 10em;
+  }
+  .bg-img {
+    display: none;
+  }
+
+  .note{
+    color: rgba(255, 0, 0, 0.306);
+  }
+
+  .form-wrapper {
+    border: 0.4px solid rgba(155, 155, 155, 0.406);
+    background-color: rgb(0, 16, 49);
+  }
+ }
