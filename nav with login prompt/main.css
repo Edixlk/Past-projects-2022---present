@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: rgb(243, 242, 242);
+  background-color: rgb(87, 87, 87);
 }
 
 nav {
@@ -80,8 +80,8 @@ nav {
   background-color: rgb(4, 110, 203);
 }
 
-
-.sign-in-dialog { /* this is for mobile only, it should not be shown on larger screens */
+.sign-in-dialog {
+  /* this is for mobile only, it should not be shown on larger screens */
   display: none;
 }
 
@@ -139,7 +139,6 @@ nav {
     gap: 12px;
   }
 
-
   .sign-in-dialog {
     animation: popup;
     animation-duration: 3s;
@@ -164,7 +163,6 @@ nav {
     border-radius: 5px;
   }
 
-
   .close-btn {
     background-color: rgb(12, 78, 135);
     color: rgba(255, 255, 255, 0.628);
@@ -173,24 +171,22 @@ nav {
   /* ---- for popup delay ----- */
 
   @keyframes popup {
-
     0% {
-        bottom: -268px;
+      bottom: -268px;
     }
-    
+
     100% {
-        bottom: 0px;
+      bottom: 0px;
     }
   }
-  
 
   @keyframes slidedown {
     0% {
-        bottom: 0px;
+      bottom: 0px;
     }
 
     100% {
-        bottom: -268px;
+      bottom: -268px;
     }
   }
 
@@ -200,7 +196,6 @@ nav {
     font-size: 2em;
     color: white;
   }
-
 
   .bar {
     display: block;
@@ -218,20 +213,17 @@ nav {
     font-size: 2.5em;
     margin-bottom: 12px;
   }
-
-
 }
-
 
 /* FOR LOGIN PAGE */
 
 .sign-wrapper {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   backdrop-filter: blur(5px);
-   background-color: rgba(0, 0, 0, 0.121);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.121);
 }
 
 .sign-wrapper {
@@ -247,8 +239,8 @@ nav {
   color: white;
   display: flex;
   justify-content: center;
-   align-items: center;
-   gap: 12px;
+  align-items: center;
+  gap: 12px;
 }
 
 .form-wrapper {
@@ -262,7 +254,7 @@ nav {
 
 .form-wrapper h1 {
   width: 50%;
-  border-bottom: 1px solid  rgb(8, 127, 231);
+  border-bottom: 1px solid rgb(8, 127, 231);
   text-align: center;
   padding-bottom: 0.3em;
   margin-bottom: 12px;
@@ -287,20 +279,20 @@ nav {
   padding: 7px 14px;
   font-weight: 500;
   font-size: 1em;
-  background-color:  rgb(233, 234, 235);
+  background-color: rgb(233, 234, 235);
 }
 
 .form-wrapper #login-btn {
   margin-top: 10px;
   border-radius: 5px;
   cursor: pointer;
-   background-color: rgb(0, 136, 255);
-   width: 100%;
-   text-align: center;
-   padding: 0.6em;
-   color: white;
-   height: 40px;
-   font-size: 1em;
+  background-color: rgb(0, 136, 255);
+  width: 100%;
+  text-align: center;
+  padding: 0.6em;
+  color: white;
+  height: 40px;
+  font-size: 1em;
 }
 
 #login-btn:hover {
@@ -327,37 +319,34 @@ nav {
   z-index: -1;
 }
 
-
 /* ANIMATION FOR LOGIN PAGE */
-@keyframes  fade {
-
+@keyframes fade {
   0% {
-   opacity: 0%;
+    opacity: 0%;
   }
 
   100% {
     opacity: 100%;
-  }  
+  }
 }
- @media only screen and (max-width: 400px) {
-
-  .sign-wrapper {
-     background-color: rgb(0, 0, 0);
+@media only screen and (max-width: 768px) {
+  .bg-img {
+    background-image: url(./login-bg-img.jpg);
   }
 
   .note {
-    bottom: 10em;
-  }
-  .bg-img {
-    display: none;
+    top: 6em;
   }
 
-  .note{
-    color: rgba(255, 0, 0, 0.306);
+  .note {
+    color: rgba(233, 5, 5, 0.733);
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+    height: 20px;
+    border-radius: 3px;
   }
 
-  .form-wrapper {
-    border: 0.4px solid rgba(155, 155, 155, 0.406);
-    background-color: rgb(0, 16, 49);
+  .note h3 {
+    text-align: center;
   }
- }
+}
