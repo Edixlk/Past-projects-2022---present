@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: rgb(87, 87, 87);
+  background-color: rgb(225, 247, 255);
 }
 
 nav {
@@ -80,6 +80,68 @@ nav {
   background-color: rgb(4, 110, 203);
 }
 
+
+/* ---New wrapper ---*/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+  color: rgb(61, 60, 60);
+}
+
+.wrapper p {
+  line-height: 1.4em;
+  margin-bottom: 12px;
+  font-size: 1em;
+}
+
+.wrapper h1 {
+  font-size: 70px;
+}
+
+.wrapper button {
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  background-color: rgb(0, 136, 255);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+
+.wrapper button:hover  {
+  background-color: rgb(5, 116, 220);
+ transform: scale(1.1);
+}
+
+span { /* this is to change the color of the first letter */
+  animation: colorshift;
+  animation-duration: 0.5s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+
+ /* animation is for span element only */
+
+@keyframes colorshift {
+  0% {
+   
+  }
+
+  100% {
+    color: rgb(20, 165, 255);
+  }
+}
 .sign-in-dialog {
   /* this is for mobile only, it should not be shown on larger screens */
   display: none;
