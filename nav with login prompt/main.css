@@ -70,7 +70,6 @@ nav {
   padding: 5px 12px;
   width: 100px;
   position: relative;
-  left: 2em;
   color: white;
   background-color: rgb(0, 136, 255);
   border-radius: 5px;
@@ -143,6 +142,8 @@ span { /* this is to change the color of the first letter */
     color: rgb(20, 165, 255);
   }
 }
+
+
 .sign-in-dialog {
   /* this is for mobile only, it should not be shown on larger screens */
   display: none;
@@ -169,6 +170,8 @@ span { /* this is to change the color of the first letter */
   line-height: 1.6em;
   font-size: 18px;
 }
+
+/* End of paragraph section */
 
 footer {
   height: 30%;
@@ -243,9 +246,37 @@ footer {
   width: 350px;
   border-radius: 10px;
 }
-/* for smaller screens */
+
+.img-container {
+  flex-wrap: wrap;
+}
+
+.img-container img {
+  flex-grow: 1;
+}
+
+/* for medium screens */
+
+@media only screen and (max-width: 800px) {
+
+   .nav-container {
+    justify-content: space-around;
+   }
+  
+ #sign-btn {
+  height: 30px;
+  width: 70px;
+  font-size: 0.8em;
+  background-color: transparent;
+  border: 1px solid   rgb(0, 136, 255);
+   
+ }
+}
 
 @media only screen and (max-width: 768px) {
+
+  /* navbar */
+
   .nav-container {
     display: flex;
     justify-content: space-between;
@@ -253,9 +284,12 @@ footer {
     border-bottom: 2px solid rgb(5, 95, 174);
   }
 
+  /* links  */
+
   .links {
     display: none;
   }
+
 
   .mobilen-links {
     z-index: 1;
@@ -280,6 +314,20 @@ footer {
     color: white;
     background-color: rgba(0, 0, 0, 0.272);
   }
+
+  /* end of links */
+
+  /* sign-in button */
+
+  #sign-btn {
+    height: 50px;
+    width: 30%;
+    background-color: rgb(0, 136, 255);
+    font-size: 1.2em;
+   }
+
+
+  /* Pop up dialog */
 
   .sign-in-dialog {
     z-index: 2;
@@ -326,7 +374,7 @@ footer {
     color: rgba(255, 255, 255, 0.628);
   }
 
-  /* ---- for popup delay ----- */
+  /* ---- for popup animation  ----- */
 
   @keyframes popup {
     0% {
@@ -348,6 +396,10 @@ footer {
     }
   }
 
+  /* -- end of pop up message */
+
+  /* hamburger button for mobile */
+
   .ham-btn {
     cursor: pointer;
     display: block;
@@ -357,11 +409,11 @@ footer {
 
   .bar {
     display: block;
-    width: 30px;
-    height: 2px;
-    background-color: white;
-    margin: 4px;
   }
+
+  /* end of hamburger button */
+
+  /* wrapper for main content */
 
   .wrapper {
     padding: 1em 0.6em;
@@ -393,15 +445,9 @@ footer {
     line-height: 1.2em;
     text-align: justify;
   }
-
-  .img-container {
-    flex-wrap: wrap;
-  }
-
-  .img-container img {
-    flex-grow: 1;
-  }
 }
+
+/* end of wrappper */
 
 /* FOR LOGIN PAGE */
 
@@ -487,12 +533,16 @@ footer {
   background-color: rgb(8, 127, 231);
 }
 
+/* this note would remind users that the form isn't functional as yet */
+
 .note {
   position: absolute;
   bottom: 3em;
   color: rgba(255, 255, 255, 0.811);
   font-size: 13px;
 }
+
+/* this is for the background image on the "login.html" page */
 
 .bg-img {
   background-color: rgba(0, 0, 0, 0.493);
@@ -517,7 +567,11 @@ footer {
     opacity: 100%;
   }
 }
+
+/* for tablets and phones */
+
 @media only screen and (max-width: 768px) {
+
   .bg-img {
     background-image: url(./login-bg-img.jpg);
   }
