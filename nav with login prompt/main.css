@@ -9,6 +9,7 @@
   outline: none;
   border: none;
   font-family: "Montserrat", sans-serif;
+  transition:   0.3s ease;
 }
 
 body {
@@ -147,6 +148,101 @@ span { /* this is to change the color of the first letter */
   display: none;
 }
 
+/* paragraph section */
+
+.paragraph-sect {
+  background-color: rgb(116, 208, 251);
+  height: 80vh, auto ;
+  display: flex;
+  flex-direction: column;
+  padding: 3em 4em;
+  color: rgb(23, 72, 95);
+}
+
+.paragraph-sect h1 {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.paragraph-sect p {
+  text-align: justify;
+  line-height: 1.6em;
+  font-size: 18px;
+}
+
+footer {
+  height: 30%;
+  background-color: rgb(41, 41, 41);
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  padding: 1.4em 0 ;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-content h4 {
+  font-size: 1.3em;
+  color: rgb(197, 190, 190);
+  width: 30%;
+  border-bottom: 1px solid rgb(215, 211, 211);
+  text-align: center;
+  padding-bottom: 0.7em;
+  font-weight: 400;
+}
+
+.footer-content h4 {
+  font-weight: 500;
+}
+
+.footer-links {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.footer-links a {
+  font-size: 2em;
+  margin: 0 5px;
+  color: rgb(197, 190, 190);
+  padding:  5px;
+}
+
+.footer-links a:hover {
+  color: rgb(83, 175, 255);
+}
+
+.img-section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+} 
+
+.img-section h1 {
+  margin-bottom: 12px;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.img-container {
+  gap: 1em;
+  height:  50%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 3em;
+}
+
+.img-container img {
+  cursor: pointer;
+  height: 340px;
+  width: 350px;
+  border-radius: 10px;
+}
 /* for smaller screens */
 
 @media only screen and (max-width: 768px) {
@@ -268,12 +364,42 @@ span { /* this is to change the color of the first letter */
   }
 
   .wrapper {
-    padding: 1em 2em;
+    padding: 1em 0.6em;
   }
   .wrapper h1 {
     line-height: 43px;
     font-size: 2.5em;
     margin-bottom: 12px;
+  }
+
+  .wrapper p {
+    font-size: 15px;
+  }
+
+   .wrapper br {
+    display: none;
+   }
+
+  .paragraph-sect {
+    padding: 2em 1em;
+  }
+
+  .paragraph-sect h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .paragraph-sect p {
+    line-height: 1.2em;
+    text-align: justify;
+  }
+
+  .img-container {
+    flex-wrap: wrap;
+  }
+
+  .img-container img {
+    flex-grow: 1;
   }
 }
 
