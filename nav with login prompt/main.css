@@ -12,6 +12,9 @@
   transition:   0.3s ease;
 }
 
+html { scroll-behavior: smooth;}
+* {  border: 1px solid red; }
+
 body {
   background-color: rgb(225, 247, 255);
 }
@@ -176,10 +179,9 @@ span { /* this is to change the color of the first letter */
 footer {
   height: 30%;
   background-color: rgb(41, 41, 41);
-  bottom: 0;
-  position: relative;
+  z-index: 1;
   width: 100%;
-  padding: 1.4em 0 ;
+  padding: 1em;
 }
 
 .footer-content {
@@ -227,7 +229,7 @@ footer {
 } 
 
 .img-section h1 {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   text-align: center;
   padding: 1em 0;
 }
@@ -237,13 +239,13 @@ footer {
   height:  50%;
   display: flex;
   justify-content: space-around;
-  padding: 0 3em;
+  padding: 0 1.2em;
 }
 
 .img-container img {
   cursor: pointer;
   height: 340px;
-  width: 350px;
+  width: 240px;
   border-radius: 10px;
 }
 
