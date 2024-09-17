@@ -1,216 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-      font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
-}
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    border: 1px red solid;
+ }
 
-::selection {
-    color: rgb(244, 252, 255);
-    background-color: rgb(0, 183, 255);
-}
-/* REGULAR STYLING FOR THE PAGE */
-body {
-    animation: fade 5s 1;
-    background-color: rgb(37, 37, 37);
-    color: rgb(228, 228, 228);
-}
+ body {
+    min-height: 100vh;
+    background-color: rgb(27, 27, 77);
+ }
 
-/* ============ FOR HEADER ================ */
+ span {
+   margin-right: 5px;
+ }
 
-.container {
-    height: 100vh;
-    padding: 2em 5em;
-    justify-content: center;
-}
+ /* navigation bar */
 
-
-.container h1, h3 {
-    margin-bottom: 12px;
-}
-
-
-h3 {
-    font-weight: 300;
-}
-
-
-hr {
-    margin: 1em 0;
-}
-
-
-ul {
-    padding-bottom: 3em;
-}
-
-/* ============== STYLING THE ANCHOR TAG ========== */
-a {
-    color: rgb(255, 255, 255);
-    display: block;
-    height: 30px;
-    margin: 12px 0;
+ nav {
     width: 100%;
-    height: 30px;
-}
+    height: 55px;
+    line-height: 50px;
+    background-color: rgb(1, 16, 71);
+   padding: 0 10em;
+   position: fixed;
+   top: 0;
+   z-index: 1;
+ }
 
-a {
-    font-size: 1.3em;
-    font-weight: 600;
-    padding: 2px 27px;
-}
+
+ .nav-container {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .nav-links {
+    display: flex;
+    gap: 0.5em;
+ }
 
 
-br {
-    display: none;
-}
-/* ===== THIS WOULD ADD A BLUE BORDER TO THE LEFT AND DARKEN A BACKGROUND COLOR WHEN THE MOUSE IS HOVERED OVER IT */
+ /* buttons */
 
-a:hover {
-   background-color: rgba(0, 0, 0, 0.26);
-   border-left: 3px solid  rgb(0, 183, 255);
-}
-
-p {
+ .nav-links button {
+    padding: 2px 5px;
+    width: 150px;
+    height: 35px;
+    margin: auto;
+    font-size: 1em;
+    cursor: pointer;
     font-weight: 500;
-}
-/* == FOR FADE IN ANIMATION, NOTHING FNACY. == */
+    color: white;
+    border-radius: 3px;
+ }
 
-@keyframes fade {
+#source-link { background-color: rgb(0, 98, 255);  }
 
-    to {
-        opacity: 100%;
-    }
+#yt-link { background-color: red;}
 
-    from {
-        opacity: 0%}
+/* hover */
 
-    }
+#source-link:hover { background-color: rgb(4, 69, 173);}
 
-/* ========== BUTTON WRAPPER FOR ============= */
+#yt-link:hover { background-color: rgb(179, 0, 0); }
 
-    .btn-wrapper {
-        width: 100%;
-    }
+/* logo */
 
-
-    /* STYLING FOR BOTH GIT AND YOUTUBE BUTTONS */
-
-    button {
-        margin: 0 10px;
-        font-weight: 500;
-    }
+ .logo {
+     display: block;
+     font-size: 1.5em;
+     font-weight: 500;
+     color: white
+ }
 
 
-    .github-btn-link {
-        height: 50px;
-        width: 150px;
-        font-size: 1.2em;
-        background-color: purple;
-        color: white;
-        outline: none;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        bottom: 0;
-    }
-
-    /* THIS CREATES SPACE FOR THE LOGO NEXT TO THE TEXT IN THE BUTTON */
-
-    span {
-        margin-right: 5px;
-    }
+ /* content */
 
 
-    .yt-btn {
-        height: 50px;
-        width: 150px;
-        font-size: 1.2em;
-        background-color: rgb(199, 8, 8);
-        color: white;
-        outline: none;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        bottom: 0;
-    }
- 
-    /* ====== THIS IS TO DARKEN THE BUTTON WHEN THE MOUSE IS OVER IT =====*/
+ .wrapper {
+   position: absolute;
+   top: 5%;
+    margin-top: 3%;
+    padding: 0.5em  2em;
 
-    .github-btn-link:hover {
-        background-color:  rgb(110, 2, 110);
-    }
+    /* this is for h1 text*/
+    color: white;
+ }
 
-    .yt-btn:hover {
-        background-color: rgb(155, 2, 2);
-    }
+ /* for cards */
 
+ .projects_wrapper {
+    margin-bottom: 2em;
+    margin-top: 1.3em;
+ }
 
-    /* =================== END OF HEADER ================*/
+ .projects_wrapper {
+    display: flex;
+    gap: 0.7em;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+ }
 
-
-    @media only screen and (max-width:768px) {
-
-        .container {
-           text-align: center;
-           padding: 2em;
-        }
-
-     a {
-        text-align: left;
-        margin: 20px 0;
-       
-     }
-
-     a, h1, p {
-        text-align: left;
-     }
-
-     a:hover {
-         border-left: none;
-         background: none;
-         color: rgb(0, 183, 255);
-     }
-
-     p {
-        line-height: 1.4em;
-        font-size:  0.7em
-     }
-
-     button {
-        margin: 5px 5px;
-     }
-
-     hr {
-        margin: 12px 0;
-    }
-
-    ul {
-        padding-bottom: 1em ;
-    }
-
-    br {
-        display: block;
-    }
-
-    }
+ .wrapper h1 {
+    font-weight: 400;
+    margin:  0.5em 0 ;
+ }
 
 
-    @media only screen and (max-width:400px) {
+ /* This is not complete */
 
-        .container {
-            padding: 3.4em 2em;
-        }
+ .card {
+   width: 350px;
+   height: 300px;
+   background-image: url(./images/bg_one.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   overflow: hidden;
+   border-radius: 5px;
+   flex-grow: 1;
+ }
 
-        .container h1 {
-            line-height: 1.3em;
-        }
+ .card-details {
+   position: relative;
+   bottom: -59%;
+   background-color: rgb(0, 128, 255);
+   height: 50%;
+   padding: 1em 0.5em;
+   display: flex;
+   flex-direction: column;
+   gap:5px;
+ }
 
-        .container p {
-            font-size: 1.1em;
-            font-weight: 200;
-        }
-    }
+
+ .card-details h3 { font-weight: 500; text-align: center; margin-bottom: 5px;}
+
+ .card-details  button {
+   border-radius:5px;
+   padding: 6px;
+   cursor: pointer;
+   color: white;
+ }
+
+
+#src-code { background-color: rgb(3, 77, 174);}
+
+#live-prev { background-color: rgb(3, 3, 41);}
