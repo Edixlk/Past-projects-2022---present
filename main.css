@@ -1,153 +1,220 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-family: "Montserrat", sans-serif;
-    border: 1px red solid;
- }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.2s ease;
+}
 
- body {
-    min-height: 100vh;
-    background-color: rgb(27, 27, 77);
- }
+body {
+  background-color: rgb(9, 37, 84);
+}
 
- span {
-   margin-right: 5px;
- }
+span {
+  margin-right: 5px;
+}
 
- /* navigation bar */
+/* navigation bar */
 
- nav {
-    width: 100%;
-    height: 55px;
-    line-height: 50px;
-    background-color: rgb(1, 16, 71);
-   padding: 0 10em;
-   position: fixed;
-   top: 0;
-   z-index: 1;
- }
+nav {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(1, 8, 35, 0.705);
+  backdrop-filter: blur(12px);
+  padding: 0 10em;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
 
- .nav-container {
-    display: flex;
-    justify-content: space-between;
- }
+.nav-links {
+  display: flex;
+  gap: 0.5em;
+}
 
- .nav-links {
-    display: flex;
-    gap: 0.5em;
- }
+/* buttons */
 
+.nav-links button {
+  padding: 2px 5px;
+  width: 150px;
+  height: 35px;
+  margin: auto;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+}
 
- /* buttons */
+#source-link {
+  background-color: rgb(0, 98, 255);
+}
 
- .nav-links button {
-    padding: 2px 5px;
-    width: 150px;
-    height: 35px;
-    margin: auto;
-    font-size: 1em;
-    cursor: pointer;
-    font-weight: 500;
-    color: white;
-    border-radius: 3px;
- }
-
-#source-link { background-color: rgb(0, 98, 255);  }
-
-#yt-link { background-color: red;}
+#yt-link {
+  background-color: red;
+}
 
 /* hover */
 
-#source-link:hover { background-color: rgb(4, 69, 173);}
+#source-link:hover {
+  background-color: rgb(4, 69, 173);
+}
 
-#yt-link:hover { background-color: rgb(179, 0, 0); }
+#yt-link:hover {
+  background-color: rgb(179, 0, 0);
+}
+
+/* hover effect for cards link */
+
+#src-code:hover {
+  background-color: rgba(4, 74, 154, 0.731);
+}
+
+#live-prev:hover {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.146);
+}
 
 /* logo */
 
- .logo {
-     display: block;
-     font-size: 1.5em;
-     font-weight: 500;
-     color: white
- }
+.logo {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: white;
+}
+
+/* content */
+
+.wrapper {
+  position: absolute;
+  top: 5%;
+  margin-top: 3%;
+  padding: 0.5em 2em;
+
+  /* this is for h1 text*/
+  color: white;
+}
+
+/* for cards */
+
+.projects_wrapper {
+  margin-bottom: 2em;
+  margin-top: 1.3em;
+}
+
+.projects_wrapper {
+  display: flex;
+  gap: 0.7em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
- /* content */
+.wrapper h1 {
+  font-weight: 400;
+  margin: 0.5em 0;
+}
 
+/* This is not complete */
 
- .wrapper {
-   position: absolute;
-   top: 5%;
-    margin-top: 3%;
-    padding: 0.5em  2em;
+.card {
+  width: 270px;
+  height: 350px;
+  background-image: url(./images/bg_one.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  flex-grow: 1;
+  margin: 0.2em;
+}
 
-    /* this is for h1 text*/
-    color: white;
- }
-
- /* for cards */
-
- .projects_wrapper {
-    margin-bottom: 2em;
-    margin-top: 1.3em;
- }
-
- .projects_wrapper {
-    display: flex;
-    gap: 0.7em;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
- }
-
- .wrapper h1 {
-    font-weight: 400;
-    margin:  0.5em 0 ;
- }
-
-
- /* This is not complete */
-
- .card {
-   width: 350px;
-   height: 300px;
-   background-image: url(./images/bg_one.png);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   overflow: hidden;
-   border-radius: 5px;
-   flex-grow: 1;
- }
-
- .card-details {
-   position: relative;
-   bottom: -59%;
-   background-color: rgb(0, 128, 255);
-   height: 50%;
-   padding: 1em 0.5em;
-   display: flex;
-   flex-direction: column;
-   gap:5px;
- }
-
-
- .card-details h3 { font-weight: 500; text-align: center; margin-bottom: 5px;}
-
- .card-details  button {
-   border-radius:5px;
-   padding: 6px;
+.card {
    cursor: pointer;
-   color: white;
- }
+}
+
+.card:hover {
+   transform: scale(1.04);
+   border: 1px solid  rgb(169, 211, 255);
+}
 
 
-#src-code { background-color: rgb(3, 77, 174);}
+.card-details {
+  position: relative;
+  bottom: -59%;
+  height: 50%;
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: rgb(8, 8, 35);
+}
 
-#live-prev { background-color: rgb(3, 3, 41);}
+.card-details h3 {
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-details button {
+  padding: 6px;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 0.3em;
+  font-weight: 300;
+}
+
+#src-code {
+  background-color: rgba(5, 98, 205, 0.731);
+}
+#live-prev {
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+/* footer */
+
+/* media queries */
+
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+  nav {
+    background: rgba(1, 13, 33, 0.47);
+    backdrop-filter: blur(12px);
+    padding: 0;
+    border-bottom: 1px solid rgba(136, 166, 225, 0.352);
+    padding: 0 1em;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .wrapper {
+    padding: 0.8em;
+  }
+
+  .wrapper h1 {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 1.3em 0;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(178, 217, 249);
+    padding-bottom: 1.2em;
+  }
+}
