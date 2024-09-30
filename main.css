@@ -1,220 +1,216 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  font-family: "Montserrat", sans-serif;
-  transition: 0.2s ease;
-}
-
-body {
-  background-color: rgb(9, 37, 84);
-}
-
-span {
-  margin-right: 5px;
-}
-
-/* navigation bar */
-
-nav {
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  background-color: rgba(1, 8, 35, 0.705);
-  backdrop-filter: blur(12px);
-  padding: 0 10em;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-links {
-  display: flex;
-  gap: 0.5em;
-}
-
-/* buttons */
-
-.nav-links button {
-  padding: 2px 5px;
-  width: 150px;
-  height: 35px;
-  margin: auto;
-  font-size: 1em;
-  cursor: pointer;
-  font-weight: 500;
-  color: white;
-}
-
-#source-link {
-  background-color: rgb(0, 98, 255);
-}
-
-#yt-link {
-  background-color: red;
-}
-
-/* hover */
-
-#source-link:hover {
-  background-color: rgb(4, 69, 173);
-}
-
-#yt-link:hover {
-  background-color: rgb(179, 0, 0);
-}
-
-/* hover effect for cards link */
-
-#src-code:hover {
-  background-color: rgba(4, 74, 154, 0.731);
-}
-
-#live-prev:hover {
-  border: 1px solid white;
-  background-color: rgba(255, 255, 255, 0.146);
-}
-
-/* logo */
-
-.logo {
-  display: block;
-  font-size: 1.5em;
-  font-weight: 500;
-  color: white;
-}
-
-/* content */
-
-.wrapper {
-  position: absolute;
-  top: 5%;
-  margin-top: 3%;
-  padding: 0.5em 2em;
-
-  /* this is for h1 text*/
-  color: white;
-}
-
-/* for cards */
-
-.projects_wrapper {
-  margin-bottom: 2em;
-  margin-top: 1.3em;
-}
-
-.projects_wrapper {
-  display: flex;
-  gap: 0.7em;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-.wrapper h1 {
-  font-weight: 400;
-  margin: 0.5em 0;
-}
-
-/* This is not complete */
-
-.card {
-  width: 270px;
-  height: 350px;
-  background-image: url(./images/bg_one.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  flex-grow: 1;
-  margin: 0.2em;
-}
-
-.card {
-   cursor: pointer;
-}
-
-.card:hover {
-   transform: scale(1.04);
-   border: 1px solid  rgb(169, 211, 255);
-}
-
-
-.card-details {
-  position: relative;
-  bottom: -59%;
-  height: 50%;
-  padding: 1em 1em;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  background: rgb(8, 8, 35);
-}
-
-.card-details h3 {
-  font-size: 1em;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.card-details button {
-  padding: 6px;
-  cursor: pointer;
-  color: white;
-  margin-bottom: 0.3em;
-  font-weight: 300;
-}
-
-#src-code {
-  background-color: rgba(5, 98, 205, 0.731);
-}
-#live-prev {
-  border: 1px solid white;
-  background-color: transparent;
-}
-
-/* footer */
-
-/* media queries */
-
-@media only screen and (min-width: 0px) and (max-width: 900px) {
-  nav {
-    background: rgba(1, 13, 33, 0.47);
-    backdrop-filter: blur(12px);
+      font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    border-bottom: 1px solid rgba(136, 166, 225, 0.352);
-    padding: 0 1em;
-  }
-
-  .logo {
-    width: 50%;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .wrapper {
-    padding: 0.8em;
-  }
-
-  .wrapper h1 {
-    text-align: center;
-    font-size: 1.3em;
-    margin: 1.3em 0;
-    font-weight: 600;
-    border-bottom: 1px solid rgb(178, 217, 249);
-    padding-bottom: 1.2em;
-  }
+    text-decoration: none;
 }
+
+::selection {
+    color: rgb(244, 252, 255);
+    background-color: rgb(0, 183, 255);
+}
+/* REGULAR STYLING FOR THE PAGE */
+body {
+    animation: fade 5s 1;
+    background-color: rgb(37, 37, 37);
+    color: rgb(228, 228, 228);
+}
+
+/* ============ FOR HEADER ================ */
+
+.container {
+    height: 100vh;
+    padding: 2em 5em;
+    justify-content: center;
+}
+
+
+.container h1, h3 {
+    margin-bottom: 12px;
+}
+
+
+h3 {
+    font-weight: 300;
+}
+
+
+hr {
+    margin: 1em 0;
+}
+
+
+ul {
+    padding-bottom: 3em;
+}
+
+/* ============== STYLING THE ANCHOR TAG ========== */
+a {
+    color: rgb(255, 255, 255);
+    display: block;
+    height: 30px;
+    margin: 12px 0;
+    width: 100%;
+    height: 30px;
+}
+
+a {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 2px 27px;
+}
+
+
+br {
+    display: none;
+}
+/* ===== THIS WOULD ADD A BLUE BORDER TO THE LEFT AND DARKEN A BACKGROUND COLOR WHEN THE MOUSE IS HOVERED OVER IT */
+
+a:hover {
+   background-color: rgba(0, 0, 0, 0.26);
+   border-left: 3px solid  rgb(0, 183, 255);
+}
+
+p {
+    font-weight: 500;
+}
+/* == FOR FADE IN ANIMATION, NOTHING FNACY. == */
+
+@keyframes fade {
+
+    to {
+        opacity: 100%;
+    }
+
+    from {
+        opacity: 0%}
+
+    }
+
+/* ========== BUTTON WRAPPER FOR ============= */
+
+    .btn-wrapper {
+        width: 100%;
+    }
+
+
+    /* STYLING FOR BOTH GIT AND YOUTUBE BUTTONS */
+
+    button {
+        margin: 0 10px;
+        font-weight: 500;
+    }
+
+
+    .github-btn-link {
+        height: 50px;
+        width: 150px;
+        font-size: 1.2em;
+        background-color: purple;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        bottom: 0;
+    }
+
+    /* THIS CREATES SPACE FOR THE LOGO NEXT TO THE TEXT IN THE BUTTON */
+
+    span {
+        margin-right: 5px;
+    }
+
+
+    .yt-btn {
+        height: 50px;
+        width: 150px;
+        font-size: 1.2em;
+        background-color: rgb(199, 8, 8);
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        bottom: 0;
+    }
+ 
+    /* ====== THIS IS TO DARKEN THE BUTTON WHEN THE MOUSE IS OVER IT =====*/
+
+    .github-btn-link:hover {
+        background-color:  rgb(110, 2, 110);
+    }
+
+    .yt-btn:hover {
+        background-color: rgb(155, 2, 2);
+    }
+
+
+    /* =================== END OF HEADER ================*/
+
+
+    @media only screen and (max-width:768px) {
+
+        .container {
+           text-align: center;
+           padding: 2em;
+        }
+
+     a {
+        text-align: left;
+        margin: 20px 0;
+       
+     }
+
+     a, h1, p {
+        text-align: left;
+     }
+
+     a:hover {
+         border-left: none;
+         background: none;
+         color: rgb(0, 183, 255);
+     }
+
+     p {
+        line-height: 1.4em;
+        font-size:  0.7em
+     }
+
+     button {
+        margin: 5px 5px;
+     }
+
+     hr {
+        margin: 12px 0;
+    }
+
+    ul {
+        padding-bottom: 1em ;
+    }
+
+    br {
+        display: block;
+    }
+
+    }
+
+
+    @media only screen and (max-width:400px) {
+
+        .container {
+            padding: 3.4em 2em;
+        }
+
+        .container h1 {
+            line-height: 1.3em;
+        }
+
+        .container p {
+            font-size: 1.1em;
+            font-weight: 200;
+        }
+    }

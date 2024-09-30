@@ -76,6 +76,8 @@ nav {
     padding: 0 10%;
     height: 100vh;
     margin-top: 6em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main h1 {
@@ -94,12 +96,7 @@ nav {
     color: rgb(53, 53, 53);
 }
 
-.main img {
-    position: relative;
-    top: -30%;
-    width: 420px;
-    float: right;
-}
+
 
 .main button {
     padding: 6px 7px;
